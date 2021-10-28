@@ -52,5 +52,3 @@ function userlogoutIAM2PC($page, event) {
       // alert ("End Logout")
     });
   }
-
-    
