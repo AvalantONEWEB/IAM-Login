@@ -13,19 +13,7 @@ function userlogoutIAM2($page, event) {
       },
     };
     $.ajax(settings).done(function (response) {
-      sessionStorage.removeItem("iam2_token_login_jhn");
-      sessionStorage.removeItem("usernameA");
-      sessionStorage.removeItem("token_Expiry_Date");
-      sessionStorage.removeItem("tokenID");
-      sessionStorage.removeItem("refreshtoken");
-      sessionStorage.removeItem("this_token_scope");
-      sessionStorage.removeItem("firstname");
-      sessionStorage.removeItem("lastname");
-      sessionStorage.removeItem("department");
-      sessionStorage.removeItem("mobile");
-      sessionStorage.removeItem("email");
-      sessionStorage.removeItem("avatar");
-      sessionStorage.removeItem("userid");
+      sessionStorage.clear();  
       //Session storage cleared
       //Clear Console
       console.clear();
