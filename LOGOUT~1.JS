@@ -19,12 +19,20 @@ function userlogoutIAM2($page, event) {
       sessionStorage.removeItem("tokenID");
       sessionStorage.removeItem("refreshtoken");
       sessionStorage.removeItem("this_token_scope");
+      sessionStorage.removeItem("firstname");
+      sessionStorage.removeItem("lastname");
+      sessionStorage.removeItem("department");
+      sessionStorage.removeItem("mobile");
+      sessionStorage.removeItem("email");
+      sessionStorage.removeItem("avatar");
+      sessionStorage.removeItem("userid");
       //Session storage cleared
       //Clear Console
       console.clear();
       //Redirect user to the Main Sign in Page
       //Replace it with your application- SignIn Page
-      $page.pageGo("loginwithiam2");
+      $page.pageGo("[Your_Application_SignIN_Page]");
+      //example:$page.pageGo("loginwithiam2");
       $page.update();
       // alert ("End Logout")
     });
